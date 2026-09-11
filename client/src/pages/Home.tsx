@@ -113,9 +113,9 @@ const steps = [
 ];
 
 const phases = [
-  { number: "01", title: "التصنيع المتقدم", english: "Advanced Manufacturing", dates: "15 – 19 أكتوبر 2026", meta: "5 أيام", tone: "navy" },
-  { number: "02", title: "حياة منزلية بجودة عالية", english: "Quality Home Life", dates: "23 – 27 أكتوبر 2026", meta: "5 أيام", tone: "gold" },
-  { number: "03", title: "حياة أفضل", english: "Better Life", dates: "31 أكتوبر – 4 نوفمبر 2026", meta: "5 أيام", tone: "teal" },
+  { number: "01", title: "التصنيع المتقدم", english: "Advanced Manufacturing", dates: "15 – 19 أكتوبر 2026", meta: "5 أيام", tone: "navy", products: "الإلكترونيات · الأجهزة المنزلية · الآلات والمعدات · أدوات الطاقة" },
+  { number: "02", title: "حياة منزلية بجودة عالية", english: "Quality Home Life", dates: "23 – 27 أكتوبر 2026", meta: "5 أيام", tone: "gold", products: "الأثاث · الديكور · أدوات المطبخ · مستلزمات الحدائق والهدايا" },
+  { number: "03", title: "حياة أفضل", english: "Better Life", dates: "31 أكتوبر – 4 نوفمبر 2026", meta: "5 أيام", tone: "teal", products: "الملابس والمنسوجات · الأحذية والحقائب · الصحة · القرطاسية والمنتجات اليومية" },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -195,7 +195,7 @@ export default function Home() {
         <section id="overview" className="bg-white py-20 sm:py-28">
           <div className="container">
             <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><SectionLabel>نظرة سريعة</SectionLabel><h2 className="section-title mt-4">معرض عالمي، <span>ثلاث فرص.</span></h2></div><p className="max-w-md text-sm leading-7 text-[#72808a]">يقام معرض كانتون في مدينة قوانغتشو على ثلاث مراحل متخصصة. اختر المرحلة الأقرب لنشاطك التجاري وخطط لزيارتك مبكراً.</p></div>
-            <div className="grid gap-4 lg:grid-cols-3">{phases.map((phase, index) => <div key={phase.number} className={`phase-card phase-${phase.tone} group relative overflow-hidden rounded-2xl p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl`}><div className="relative z-10 flex items-start justify-between"><span className="phase-number">{phase.number}</span><CalendarDays size={20} className="opacity-70" /></div><div className="relative z-10 mt-16"><div className="mb-2 text-[10px] font-bold tracking-[.12em] opacity-65">PHASE {phase.number}</div><h3 className="text-xl font-extrabold leading-8">{phase.title}</h3><p className="mt-1 text-[12px] font-medium opacity-65">{phase.english}</p><div className="mt-7 flex items-center justify-between border-t border-current/15 pt-4 text-xs font-bold"><span>{phase.dates}</span><span className="opacity-65">{phase.meta}</span></div></div><div className="phase-orb" /></div>)}</div>
+            <div className="grid gap-4 lg:grid-cols-3">{phases.map((phase, index) => <div key={phase.number} className={`phase-card phase-${phase.tone} group relative overflow-hidden rounded-2xl p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl`}><div className="relative z-10 flex items-start justify-between"><span className="phase-number">{phase.number}</span><CalendarDays size={20} className="opacity-70" /></div><div className="relative z-10 mt-16"><div className="mb-2 text-[10px] font-bold tracking-[.12em] opacity-65">PHASE {phase.number}</div><h3 className="text-xl font-extrabold leading-8">{phase.title}</h3><p className="mt-1 text-[12px] font-medium opacity-65">{phase.english}</p><div className="mt-5 border-t border-current/15 pt-4"><div className="mb-2 text-[10px] font-bold opacity-65">ماذا يُعرض؟</div><p className="text-[11px] font-semibold leading-5 opacity-85">{phase.products}</p></div><div className="mt-5 flex items-center justify-between border-t border-current/15 pt-4 text-xs font-bold"><span>{phase.dates}</span><span className="opacity-65">{phase.meta}</span></div></div><div className="phase-orb" /></div>)}</div>
             <div className="mt-5 flex items-center gap-2 rounded-xl bg-[#f6f4ee] px-5 py-4 text-xs font-semibold text-[#737e84]"><Info size={16} className="shrink-0 text-[#ad814b]" /> فترات التفكيك والتركيب: 20–22 أكتوبر و28–30 أكتوبر — المعرض مغلق خلال هذه الفترات.</div>
           </div>
         </section>
