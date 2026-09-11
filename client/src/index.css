@@ -33,9 +33,9 @@
   .brand-mark { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border: 1px solid #cba66c; border-radius: 13px; color: #c69a5b; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 15px; transform: rotate(-7deg); }
   .brand-mark span { transform: rotate(7deg); }
   .brand-mark.small { width: 34px; height: 34px; border-radius: 10px; font-size: 12px; }
-  .brand-logo-wrap { display: inline-flex; align-items: center; justify-content: center; width: 104px; height: 54px; overflow: hidden; border-radius: 10px; background: rgba(255,255,255,.72); }
-  .brand-logo { width: 96px; height: auto; display: block; mix-blend-mode: multiply; }
-  .footer-logo-wrap { display: inline-flex; align-items: center; justify-content: center; width: 74px; height: 52px; overflow: hidden; border-radius: 10px; background: white; }
+  .brand-logo-wrap { display: inline-flex; align-items: center; justify-content: center; width: 104px; height: 54px; overflow: hidden; }
+  .brand-logo { width: 96px; height: auto; display: block; }
+  .footer-logo-wrap { display: inline-flex; align-items: center; justify-content: center; width: 74px; height: 52px; overflow: hidden; }
   .footer-logo { width: 78px; height: auto; display: block; }
   .top-strip { background: #102337; color: rgba(255,255,255,.58); font-size: 10px; font-weight: 600; letter-spacing: .02em; }
   .top-strip .container { min-height: 28px; }
