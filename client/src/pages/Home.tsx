@@ -160,7 +160,7 @@ export default function Home() {
             <button onClick={() => scrollTo("requirements")} className="nav-link">المتطلبات</button>
           </nav>
           <div className="flex items-center gap-3">
-            <a href="#contact" onClick={() => setMenuOpen(false)} className="hidden rounded-full bg-[#102337] px-4 py-2.5 text-[12px] font-bold text-white transition hover:bg-[#24435b] sm:inline-flex">تحدث مع مستشار <ArrowLeft size={14} className="mr-1" /></a>
+            <a href="https://wa.me/8619511382336" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="hidden rounded-full bg-[#102337] px-4 py-2.5 text-[12px] font-bold text-white transition hover:bg-[#24435b] sm:inline-flex">تحدث مع مستشار <ArrowLeft size={14} className="mr-1" /></a>
             <button onClick={() => setMenuOpen(!menuOpen)} className="rounded-xl border border-[#ddd8cd] p-2.5 text-[#102337] md:hidden" aria-label="فتح القائمة">{menuOpen ? <X size={20} /> : <Menu size={20} />}</button>
           </div>
         </div>
