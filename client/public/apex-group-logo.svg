@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="title desc">
+  <title id="title">APEX GROUP</title>
+  <desc id="desc">APEX GROUP import export sourcing logo</desc>
+  <rect width="320" height="96" rx="16" fill="#102337"/>
+  <path d="M32 65 48 27h14l16 38H66l-3-8H47l-3 8H32Zm19-18h9l-4.5-12L51 47Zm35-20h18c12 0 19 5 19 14s-7 14-19 14h-7v10H86V27Zm11 9v10h6c5 0 8-2 8-5s-3-5-8-5h-6Zm31-9h31v9h-20v6h18v9h-18v6h20v9h-31V27Zm39 0h13l8 12 8-12h13l-14 19 15 19h-13l-9-13-9 13h-13l15-19-14-19Z" fill="#d6b06e"/>
+  <text x="32" y="84" fill="#fff" font-family="Arial, sans-serif" font-size="9" letter-spacing="3">IMPORT · EXPORT · SOURCING</text>
+</svg>
